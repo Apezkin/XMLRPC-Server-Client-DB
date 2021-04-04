@@ -51,7 +51,6 @@ def main():
                 print("\nRequest for topic:", topic)
                 res = []
                 for elem in root:
-                    print("Topic", elem.attrib["name"], topic)
                     if elem.attrib["name"] == topic:
                         res.append(elem.attrib["name"])
                         res.append("\n")

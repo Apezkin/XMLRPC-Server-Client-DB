@@ -17,6 +17,7 @@ def main():
                 break
 
             elif userInput == 1:
+                #SEND MSG
                 msgTopic = input("Give msg topic: ")
                 msgHeader = input("Give msg header: ")
                 msgText = input("Give msg text: ")
@@ -26,12 +27,14 @@ def main():
                 print(res)
 
             elif userInput == 2:
+                #GET MSG
                 topic = input("Give topic to fetch: ")
                 res = s.getMsg(topic)
                 for i in res:
                     print(i)
 
             elif userInput == 3:
+                #SEARCH WIKIPEDIA
                 topic = input("Give topic: ")
                 searchTerms = input("Give search terms to search with: ")
                 time = datetime.datetime.now().strftime("%c")
